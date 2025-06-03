@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="style.css">
 <title>My Coding Tutorials</title>
+<base href="/CodingTutorials/">
 </head>
 
 <body>
 
-<nav class="navbar">
+<!--<nav class="navbar">
   <div class="nav-item">HTML
     <div class="dropdown">
       <a href="html/basics.html">Basics</a>
@@ -31,7 +32,18 @@
       <a href="#unity-ui">UI</a>
     </div>
   </div>
-</nav>
+</nav>-->
+
+<div id="navbar-placeholder"></div>
+
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-placeholder').innerHTML = data;
+    })
+    .catch(err => console.error('Failed to load navbar:', err));
+</script>
 
 <section id="html-basics">
   <h2>HTML Basics</h2>

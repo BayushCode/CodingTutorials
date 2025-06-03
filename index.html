@@ -1,0 +1,56 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Coding Tutorials</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 20px; background: #f8f9fa; color: #333; }
+    header { background: #222; color: #fff; padding: 10px 20px; }
+    nav a { margin: 0 10px; color: #fff; text-decoration: none; }
+    h1 { margin-top: 0; }
+    .tutorial { margin-bottom: 40px; }
+    footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Coding Tutorials</h1>
+    <nav>
+      <a href="#html">HTML</a>
+      <a href="#js">JavaScript</a>
+      <a href="#unity">Unity</a>
+    </nav>
+  </header>
+
+  <section id="html" class="tutorial">
+    <h2>HTML Tutorial: Create a Simple Page</h2>
+    <p>This tutorial shows how to build a basic HTML page with structure and styles.</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;Hello&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;Hello World!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </section>
+
+  <section id="js" class="tutorial">
+    <h2>JavaScript Tutorial: Animate a Button</h2>
+    <p>Add a little animation using JavaScript on button click:</p>
+    <pre><code>document.querySelector('button').addEventListener('click', () => {
+  alert('You clicked the button!');
+});</code></pre>
+  </section>
+
+  <section id="unity" class="tutorial">
+    <h2>Unity C# Snippet: Simple AI Movement</h2>
+    <pre><code>void Update() {
+  transform.position += Vector3.forward * speed * Time.deltaTime;
+}</code></pre>
+  </section>
+
+  <footer>
+    &copy; 2025 MyCodingSite – <a href="https://github.com/yourusername">GitHub</a>
+  </footer>
+</body>
+</html>

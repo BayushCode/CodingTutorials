@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Html</title>
     <link rel="stylesheet" href="../style.css">
-    <base href="/CodingTutorials/">
+    <!--<base href="/CodingTutorials/">-->
 </head>
 
 <body>
     <div id="navbar-placeholder"></div>
 
     <script>
-    fetch('../navbar.html')
+    fetch('/CodingTutorials/navbar.html')
         .then(response => response.text())
         .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
